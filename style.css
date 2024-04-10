@@ -1,0 +1,230 @@
+@font-face {
+    font-family: Poppins;
+    src: url('./assets/fonts/Poppins-Regular.ttf');
+}
+
+* {
+    font-family: Poppins;
+}
+
+html {
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    min-height: 100vh;
+    padding-bottom: 70px;
+    box-sizing: inherit;
+}
+
+/* Navbar */
+
+.navbarCustom {
+    background-color: #252526;
+}
+
+.navbar-toggler{
+    border-color: #2fcbe6;
+    color: #2fcbe6;
+}
+
+.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2847, 203, 230, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-brand, .navbar-brand:hover, .navbar-brand:active {
+    color: #2fcbe6!important;
+}
+
+.nav-link {
+    color: white!important;
+}
+
+.nav-link:hover, .nav-link:active {
+    color: #2fcbe6!important;
+}
+
+/* Banner intro */
+
+.bannerIntro{
+    background-color: #303031;
+    min-height: 300px;
+}
+
+.bannerIntro .container{
+    width: 70%;
+}
+
+.bannerIntro h1{
+    color: #2fcbe6;
+    font-weight: regular;
+}
+
+.bannerIntro p{
+    color: #939399;
+}
+
+.bannerIntro a{
+    background-color: #2fcbe6;
+    color: #252526;
+    font-weight:bold;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    transition: all 0.25s;
+    text-decoration: none;
+}
+
+.bannerIntro a:hover{
+    background-color: #4ce3fd;
+}
+
+@media screen and (width<768px) {
+    .introText{
+        text-align: center;
+    }
+    .imgIntro{
+        margin-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .bannerIntro .container{
+        width: 100%;
+    }
+}
+
+.imgIntro{
+    width: 250px;
+}
+
+/* Sobre mim */
+
+.sobre{
+    margin: 20px 0;
+    min-height: 300px;
+    background-color: white;
+}
+
+.sobre p{
+    text-align: justify;
+}
+
+.imgSobre{
+    height: 250px;
+}
+
+@media screen and (width<768px) {
+    .imgSobre{
+        margin-bottom: 20px;
+    }
+
+}
+
+/* Projetos */
+
+.projetos{
+    background-color: #303031;
+    min-height: 400px;
+}
+
+.projetos .container{
+    padding:20px 0;
+}
+
+.projetos .container h1{
+    margin-bottom: 20px;
+    color: white;
+}
+
+.card{
+    min-height: 400px;
+}
+
+@media screen and (width<768px) {
+    .card{
+        margin-bottom: 10px;
+    }
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-text{
+    flex-grow: 1;
+}
+
+.card-img-top{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card p{
+    text-align: justify;
+}
+
+.card a{
+    font-weight: bold;
+    background-color: #2fcbe6;
+    transition: all 0.25s;
+}
+
+.card a:hover{
+    background-color: #4ce3fd;
+}
+
+/* Formulário/contato */
+
+.contato h1{
+    margin: 20px 0;
+}
+
+.enviarForm{
+    background-color: #2fcbe6;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.25s;
+    padding: 5px 20px;
+    width: 120px;
+    margin: 20px auto;
+}
+
+.enviarForm:hover{
+    background-color: #4ce3fd;
+}
+
+/* Footer */
+
+footer{
+    margin-top: 20px;
+    background-color: #252526;
+    font-size: 18px;
+    padding: 10px 0;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+footer p{
+    font-size: 16px;
+    color: #2fcbe6;
+    margin-bottom: 0;
+}
+
+.fa-brands{
+    color: #2fcbe6;
+    transition: all 0.25s;
+}
+
+.fa-brands:hover{
+    cursor: pointer;
+    color: #4ce3fd;
+}
